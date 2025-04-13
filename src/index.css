@@ -1,0 +1,39 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Roboto', 'Inter', sans-serif;
+}
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: white;
+  border-radius: 2px;
+}
+html.dark ::-webkit-scrollbar-track {
+  background: #171515;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #155dfc;
+  border-radius: 5px;
+  transition: 0.3 ease all;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #457efb;
+}
+
+.dark {
+  background-color: #1f2937;
+  color: #f3f4f6;
+}
+button {
+  cursor: pointer;
+}
